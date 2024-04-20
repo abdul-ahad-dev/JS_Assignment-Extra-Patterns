@@ -2,13 +2,14 @@
 
 // Task 0
 
+
 document.write("<h2>Pattern : 00</h2>");
 
 var n = 6;
 
-for (let i = 0; i <= n; i++) 
+for (let i = 1; i <= n; i++) 
 {
-    for (let j = 0; j < i; j++) 
+    for (let j = 1; j <= i; j++) 
     {
         document.write("&nbsp;" + j);
     }
@@ -17,6 +18,7 @@ for (let i = 0; i <= n; i++)
 
 
 // Task 1
+
 
 document.write("<h2>Pattern : 01</h2>");
 
@@ -34,6 +36,7 @@ for (let i = n; i > 0; i--)
 
 // Task 2
 
+
 document.write("<h2>Pattern : 02</h2>");
 
 var n = 6;
@@ -49,6 +52,7 @@ for (let i = 0; i <= n; i++)
 
 
 // Task 3
+
 
 document.write("<h2>Pattern : 03</h2>");
 
@@ -71,6 +75,7 @@ for (let i = n; i > 0; i--)
 
 // Task 4
 
+
 document.write("<h2>Pattern : 04</h2>");
 
 var n = 6;
@@ -89,6 +94,7 @@ for (let i = 0; i <= n; i++)
 
 
 // Task 5
+
 
 document.write("<h2>Pattern : 05</h2>");
 
@@ -114,6 +120,7 @@ for (let i = 0; i <= n; i++)
 
 // Task 6
 
+
 document.write("<h2>Pattern : 06</h2>");
 
 var n = 6;
@@ -136,6 +143,7 @@ for (let i = 0; i <= n; i++)
 }
 
 // Task 7
+
 
 document.write("<h2>Pattern : 07</h2>");
 
@@ -161,6 +169,7 @@ for (let i = 0; i <= n; i++)
 
 // Task 8
 
+
 document.write("<h2>Pattern : 08</h2>");
 
 var n = 6;
@@ -183,6 +192,7 @@ for (let i = 0; i <= n; i++)
 
 // Task 9
 
+
 document.write("<h2>Pattern : 09</h2>");
 
 var n = 6;
@@ -199,5 +209,96 @@ for (let i = 0; i <= n; i++)
         
     }
 }
+
+
+// Task 10
+
+
+document.write("<h2>Pattern : 10</h2>");
+
+var n = 6;
+
+for(let i = 1 ; i <= n ; i++ ) 
+{
+    for(let j = 1 ; j <= n - i ; j++) 
+    {
+        document.write('* ')
+    }
+    for(let j = 2 ; j <= i * 2 - 1 ; j++ ) 
+    {
+        document.write('&nbsp; &nbsp;')
+    }
+    for(let j = 1 ; j <= n - i ; j++ ) 
+    {
+        document.write('* ')
+    }
+    document.write('<br>')
+}
+
+
+// Task 11
+
+
+document.write("<h2>Pattern : 11</h2>");
+
+var n = 6;
+
+for(let i = 1 ; i <= n ; i++) 
+{
+    for(let j = 1 ; j <= n - i ; j++) 
+    {
+        if(i == 1) 
+        {
+            document.write('* ')
+        }
+        else
+        {
+            document.write('&nbsp; &nbsp;')
+        }
+    }
+    for(let j = 1 ; j <= i ; j++) 
+    {
+        if(j == 1 || i == n) 
+        {
+            document.write('* ')
+        }
+        else
+        {
+        document.write('&nbsp; &nbsp;')
+        }
+    }
+    document.write('<br>')
+}
+
+
+// Task 12
+
+
+document.write("<h2>Pattern : 12</h2>");
+
+var n = 8;
+
+for(let i = 1 ; i <= n ; i++ ) 
+{
+    for(let j = 1 ; j <= n ; j++ ) 
+    {
+        if(j == 1 || j == n || i == 1 || i == n) 
+        {
+            document.write('* ')
+        } else 
+        {
+            document.write('&nbsp; &nbsp;')
+        }
+    }
+    document.write("<br>")
+}
+
+
+
+
+
+
+
+
 
 
